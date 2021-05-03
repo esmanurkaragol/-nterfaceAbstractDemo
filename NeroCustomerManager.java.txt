@@ -1,0 +1,17 @@
+package InterfaceAbstractDemo;
+
+public class NeroCustomerManager implements ICustomerService{
+
+	public NeroCustomerManager(int Id, String FirstName, String LastName, String DateOfBirth, String NationlityId) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void Save(Customer customer) {
+		
+		
+	}
+	
+	
+}
+

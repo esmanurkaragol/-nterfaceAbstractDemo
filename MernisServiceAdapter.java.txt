@@ -1,0 +1,11 @@
+package Adapters;
+
+import InterfaceAbstractDemo.Customer;
+
+public class MernisServiceAdapter extends ICustomerCheckService {
+	public void CheckİfRealPerson(Customer customer) {
+		System.out.println("doğrula:  " + customer.getNationalityId());
+		
+	} 
+
+}

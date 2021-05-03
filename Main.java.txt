@@ -1,0 +1,14 @@
+package InterfaceAbstractDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Customer customer =  new Customer ();
+		
+		NeroCustomerManager customerManager = new NeroCustomerManager (1, "Esmanur", "KARAGÖL", "1985.1.6", "12345678");
+		customerManager.Save(customer);
+		System.out.println();
+
+	}
+
+}

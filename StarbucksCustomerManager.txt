@@ -1,0 +1,24 @@
+package InterfaceAbstractDemo;
+
+public class StarbucksCustomerManager extends BaseCustomerManager {
+	
+	private ICustomerCheckService customerCheckService;
+	
+	public StarbucksCustomerManager(ICustomerCheckService customerCheckService) {
+		ICustomerCheckService _customerCheckService = customerCheckService;
+	}
+	
+	
+	@SuppressWarnings("null")
+	public void Save(Customer customer) {
+		ICustomerCheckService _customerCheckService = null;
+		if(_customerCheckService.CheckIfRealPerson(customer)) {
+			StarbucksCustomerManager base = null;
+			base.Save(customer);
+		}
+		else {
+		System.err.println("Not a valid person");
+		}
+
+	}
+}

@@ -1,0 +1,15 @@
+package InterfaceAbstractDemo;
+
+public class CustomerCheckManager implements ICustomerCheckService {
+	public void CheckIfRealPertson(Customer customer) {
+
+		System.out.println();
+	}
+
+	@Override
+	public boolean CheckIfRealPerson(Customer customer) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
